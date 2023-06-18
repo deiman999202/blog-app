@@ -12,6 +12,13 @@ import EditPost from './Pages/EditPost'
 
 
 const App = () => {
+
+  useEffect(() => {
+    fetch("https://blog-app-1zta.onrender.com")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  },[]);
+
   return (
     <UserContextProvider>
       <Routes>
