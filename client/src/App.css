@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #222;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 5px 7px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    display: block;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+main{
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+header .logo{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .author-name{
+    font-weight: bold;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px){
+    .post{
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+}
+
+.post .info{
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.post .info .author{
+    font-weight: bold;
+}
+
+
+
+
+.post-page .image{
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.post-page .image img{
+    object-fit: cover;
+    object-position: center center;
+}
+
+.post-page h1{
+    text-align: center;
+}
+
+.post-page .content a{
+    text-decoration: underline;
+}
+
+.post-page .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-page .content p{
+    line-height: 1.6rem;
+}
+
+.post-page .edit-row{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-page .edit-btn{
+    display: inline-flex;
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+a svg{
+    max-height: 20px;
+}
+
+.greet{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
