@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './Components/Layout'
@@ -12,6 +12,7 @@ import EditPost from './Pages/EditPost'
 
 
 const App = () => {
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     fetch("https://blog-app-1zta.onrender.com")
