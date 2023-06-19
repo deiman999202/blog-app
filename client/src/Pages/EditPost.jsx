@@ -11,7 +11,7 @@ const EditPost = () => {
     const [redirect, setRedirect] = useState(false)
 
     useEffect(() => {
-      fetch('http://localhost:4000/post/' + id)
+      fetch('https://blog-app-1zta.onrender.com/post/' + id)
         .then(response => {
           response.json().then(postInfo => {
             setTitle(postInfo.title)
@@ -31,7 +31,7 @@ const EditPost = () => {
     if (files?.[0]){
       data.set('file', files?.[0])
     }
-    await fetch('http://localhost:4000/post', {
+    await fetch('https://blog-app-1zta.onrender.com/post', {
       method: 'PUT',
       body: data,
       credentials: 'include'
