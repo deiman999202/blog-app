@@ -15,7 +15,9 @@ const App = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://blog-app-1zta.onrender.com")
+    fetch("https://blog-app-1zta.onrender.com", {
+      'Access-Control-Allow-Origin': '*'
+    })
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   },[]);
