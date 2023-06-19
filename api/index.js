@@ -19,7 +19,7 @@ const secret = 'jasdkjsdadasda'
 
 mongoose.connect('mongodb+srv://dimavolosin999202:35vISyDmYJdwaInz@cluster0.zkfaz8g.mongodb.net/')
 
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}))
+app.use(cors({credentials: true, origin: 'https://blog-app-front-8ypi.onrender.com'}))
 app.use(express.json())
 app.use(cookieParser())
 app.use('/uploads', express.static(__dirname + '/uploads'))
