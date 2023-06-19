@@ -10,6 +10,9 @@
     "build-client": "cd client && yarn run build",
     "start-client": "cd client && yarn start"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
